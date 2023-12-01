@@ -61,6 +61,8 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -77,7 +79,7 @@ ul {
   padding: 48px 0;
 }
 
-.conteiner {
+.container {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
@@ -108,12 +110,35 @@ ul {
 
 .link:hover {
   color: var(--color-brand);
-  font-weight: 600;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* Hero section */
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/couple-in-bakery.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
 
 .hero-title {
@@ -129,12 +154,19 @@ ul {
 }
 
 /* Addvantages section */
-.advantages-list {
-  color: var(--color-primary-light);
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brand);
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .advantages-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -150,9 +182,20 @@ ul {
 }
 
 /* Traditions section */
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
+
 .traditions-section {
   padding-top: 96px;
 }
@@ -166,7 +209,27 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-text.limited {
+  max-width: 340px;
+}
+
 /* Chefs section */
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border: 1px solid lightgrey /* видалити*/;
+  border-radius: 16px;
+}
+
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
